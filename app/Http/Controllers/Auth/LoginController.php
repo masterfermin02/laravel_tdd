@@ -40,7 +40,7 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {
-       /*$this->validateLogin($request);
+       $this->validateLogin($request);
 
         if ($this->attemptLogin($request)) {
             $user =  $this->guard()->user();
@@ -51,6 +51,6 @@ class LoginController extends Controller
             ]);
         }
 
-        return $this->sendFailedLoginResponse($request);*/
+        return $this->sendFailedLoginResponse($request);
     }
 }
